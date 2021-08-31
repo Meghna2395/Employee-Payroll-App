@@ -1,6 +1,6 @@
-class EmployeeDetails{
-     //Getters & Setters
-     get id() {
+class EmployeeDetails {
+    //Getters & Setters
+    get id() {
         return this._id;
     }
     set id(id) {
@@ -14,7 +14,7 @@ class EmployeeDetails{
         if (nameRegex.test(name)) {
             this._name = name;
         } else {
-            throw 'Name is in Incorrect Format';
+            throw 'Name is not valid';
         }
     }
     get profilePic() {
@@ -63,3 +63,4 @@ class EmployeeDetails{
             + " Notes : " + this.note;
     }
 }
+
